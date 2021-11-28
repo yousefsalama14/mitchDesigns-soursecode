@@ -1,0 +1,234 @@
+//- large screen nav
+
+nav.navbar.navbar-expand-lg.navbar-light.d-none.d-lg-flex
+  .container-sm.flex-column
+    .top-nav.d-flex.w-100.line-color
+      a.navbar-brand(href="#") 
+        img(src="imgs/logo-header@2x.png" width= "193px")
+      button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      
+      .collapse.navbar-collapse.d-flex.justify-content-between#navbarSupportedContent
+        
+        form.d-flex
+          input.form-control.me-2(type="search" placeholder="Fabric Type, Thoub, Accessories" aria-label="Search" style="width: 469px;")
+          a.btn(type="submit") 
+            i.fas.fa-search
+        .right-side.d-flex
+          .login-btn.btn.badge.text-dark.d-flex.align-items-center
+            i.fas.fa-user-circle
+            span Login / Signup
+          .cart-box
+            i.fas.fa-shopping-cart
+            span.fw-bold
+              sup 2
+    .bottom-nav.d-flex.w-100.py-2
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+        
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Thoub
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Homeware
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Men's Wear
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Men's Grooming
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Accessories
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Arabic Sandals
+            i.fas.fa-chevron-down
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+      .lang
+        button.btn.fw-bold.text-dark(type="button") 
+          img.me-2(src="imgs/united-kingdom.png" width="24px") 
+          | English
+
+//- mobile nav
+nav.navbar.navbar-expand-lg.navbar-light.line-color.d-lg-none
+  .container-sm.justify-content-unset
+    a.navbar-brand(href="#") 
+      img(src="imgs/logo-header@2x.png" width= "93px")
+    .lang.ms-auto.me-4
+      button.btn.fw-bold.text-dark(type="button") 
+        img.me-2(src="imgs/united-kingdom.png" width="24px") 
+        | English
+    button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent2" aria-controls="navbarSupportedContent2" aria-expanded="false" aria-label="Toggle navigation")
+      span.navbar-toggler-icon
+    
+    .collapse.navbar-collapse#navbarSupportedContent2
+      
+      ul.navbar-nav.me-auto.mb-2.mb-lg-0
+      
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Thoub
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Homeware
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Men's Wear
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Men's Grooming
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Accessories
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") Arabic Sandals
+          ul.dropdown-menu(aria-labelledby="navbarDropdown")
+            li
+              a.dropdown-item(href="#") Thoub
+            li
+              a.dropdown-item(href="#") Homeware
+            li
+              a.dropdown-item(href="#") Men's Wear
+            li
+              a.dropdown-item(href="#") Men's Grooming
+            li
+              a.dropdown-item(href="#") Accessories
+            li
+              a.dropdown-item(href="#") Arabic Sandals

@@ -1,0 +1,358 @@
+doctype html
+html(lang="en" dir="ltr")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css")
+        link(rel="stylesheet" href="css/owlcarousel/owl.theme.default.min.css")
+        link(rel="stylesheet", href="css/main.css")
+        title Mitch Design Task
+        //  [if lt IE 9]>
+            <script src="js/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+            <![endif]
+
+            
+    body
+        include pug/layout/nav
+
+        section.main
+            .container-sm 
+                nav.d-none.d-lg-block(aria-label="breadcrumb")
+                    ol.breadcrumb
+                        li.breadcrumb-item  
+                            a(href="#") Home 
+                        li.breadcrumb-item  
+                            a(href="#") Thoub 
+                        li.breadcrumb-item  
+                            a(href="#") Winter Collection 
+                        li.breadcrumb-item.active(aria-current="page") Naseej Thoub
+                .details
+                    .row 
+                        .col-lg-7.col-12
+                            .row
+                                
+                                .col-lg-11.col-12.offset-lg-1
+                                    .owl-carousel.owl-theme
+                                        img(src="imgs/thumbs3.jpg")
+                                        img(src="imgs/product-image.jpg")
+                                        img(src="imgs/thumbs3.jpg")
+                                        img(src="imgs/product-image.jpg")
+                                    .video-play.mt-3.d-none.d-lg-block
+                                        img.video-image(src="imgs/video-image.jpg")
+                                        .overlay 
+                                        img.play-btn(src="imgs/playbutton.svg")
+                                //- .col-lg-2.col-12.order-lg-first.mt-2.mt-lg-0
+                                //-     .items
+                                //-         img.thumbs(src="imgs/thumbs3.jpg")
+                                //-         img.thumbs.active(src="imgs/thumbs3.jpg")
+                                //-         img.thumbs(src="imgs/thumbs3.jpg")
+                                //-         img.thumbs(src="imgs/thumbs3.jpg")
+                            .col-12.d-lg-none
+                                nav(aria-label="breadcrumb")
+                                    ol.breadcrumb
+                                        li.breadcrumb-item  
+                                            a(href="#") Home 
+                                        li.breadcrumb-item  
+                                            a(href="#") Thoub 
+                                        li.breadcrumb-item  
+                                            a(href="#") Winter Collection 
+                                        li.breadcrumb-item.active(aria-current="page") Naseej Thoub
+                            
+                        .col-lg-5.col-12
+                            .product-description
+                                .product-details
+                                    h2 Naseej Thoub
+                                    p Made of 96% polyester 4% rayon extracted from natural cellulose, it has the ability to absorb sweat because it contains natural fibers
+                                    .product-info 
+                                        ul.ps-0
+                                            li 
+                                                span Brand
+                                                span Shikubi
+                                            li 
+                                                span Origins
+                                                span Japan
+                                                    img(src="imgs/japan-flag.svg")
+                                            li 
+                                                span Texture
+                                                span Medium Heavy
+                                .product-card
+                                    .colors.pt-3
+                                        h3 Available Colors
+                                        .boxs-colors
+                                            .box-color.d-inline-block
+                                                .form-check
+                                                    input.form-check-input(type="checkbox" checked)
+                                                    label.form-check-label.text-dark White
+                                                
+                                            .box-color.d-inline-block
+                                                .form-check
+                                                    input.form-check-input(type="checkbox")
+                                                    label.form-check-label.text-dark Cream
+                                    .length.mt-3
+                                        h3 length
+                                        select.form-select(aria-label="Default select example")
+                                            option(selected) 75 cm to 100 cm
+                                            option(value="1") 50 cm to 75 cm 
+                                            option(value="2") 25 cm to 50 cm 
+                                            option(value="3") 0 cm to 25 cm 
+                                        #qty-plus-minus
+                                            button(type="button" id="sub" class="sub btn") -
+                                            input(type="number" id="1" value="1" min="1" max="3")
+                                            button(type="button" id="add" class="add btn") +
+                                        .currency 
+                                            span 200 USD
+                                        .add-to-cart
+                                            button.btn Add to Cart
+                                        .shipping 
+                                            p.mb-0 Expected shipping date within Qatar 
+                                                br
+                                                | 24 October 2021 - 24 Rabi' al-Awal 1443
+                                .accordion#accordionExample
+                                    .accordion-item
+                                        h2.accordion-header#headingOne
+                                            button.accordion-button(type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Features
+                                        #collapseOne.accordion-collapse.collapse.show(aria-labelledby="headingOne" data-bs-parent="#accordionExample")
+                                            .accordion-body 
+                                                ul.ps-0
+                                                    li Medium texture heavyweight
+                                                    li It has a solid look, suitable for formal occasions
+                                                    li Wrinkle-resistant because it contains 96% synthetic fibers
+                                                    li Anti-shrink treatment
+                                                    li Anti-static treatment
+                                                    li Treated with Kuchant, which reflects the sun's rays
+                                                    li limits the temperature rise by 1-2°C
+                                    .accordion-item
+                                        h2.accordion-header#headingTwo
+                                            button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo") Washing instructions
+                                        #collapseTwo.accordion-collapse.collapse(aria-labelledby="headingTwo" data-bs-parent="#accordionExample")
+                                            .accordion-body This is the first item's accordion body It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within thethough the transition does limit overflow.
+                                    .accordion-item
+                                        h2.accordion-header#headingThree
+                                            button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree") Exchange & return policy
+                                        #collapseThree.accordion-collapse.collapse(aria-labelledby="headingThree" data-bs-parent="#accordionExample")
+                                            .accordion-body This is the first item's accordion body It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within thethough the transition does limit overflow.
+                                .frequently
+                                    h2 Frequently Bought with
+                                    .row
+                                        .col-lg-7.col-12
+                                            .products-images
+                                                img.d-inline(src="imgs/frequently-items1.jpg")
+                                                img.d-inline(src="imgs/frequently-items2.jpg")
+                                                img.d-inline(src="imgs/frequently-items3.jpg")
+                                            .form-checks
+                                                .form-check
+                                                    input.form-check-input(type="checkbox" checked)
+                                                    label.form-check-label.text-dark This Product: Naseej Thoub (200 USD)
+                                                .form-check
+                                                    input.form-check-input(type="checkbox" checked)
+                                                    label.form-check-label Rosary - Yellow 
+                                                        span (30 USD)
+                                                .form-check
+                                                    input.form-check-input(type="checkbox" checked)
+                                                    label.form-check-label Arabian Sandal - Beige 
+                                                        span (100 USD)
+                                        .col-lg-5.col-12
+                                            .total-price
+                                                h6.d-none.d-lg-block Total Price
+                                                span.currency.d-none.d-lg-block 320 USD
+                                                button.btn Add all to cart
+        section.more-thoubs
+            .container-sm 
+                .title 
+                    h2 More Thoubs
+                .row 
+                    .col-lg-3.col-6.mb-3.mb-lg-0
+                        .card.shadow
+                            img.card-img-top(src="imgs/thoubs1.jpg", alt="thoubs 1")
+                            .card-body
+                                h5.card-title Al Jazeera
+                                    img(src="imgs/japan-flag.svg", alt="japan flag")
+                                p.card-text Brand: Shibiko
+                                span.currency.fw-bold 200 USD
+                    .col-lg-3.col-6.mb-3.mb-lg-0
+                        .card.shadow
+                            img.card-img-top(src="imgs/thoubs2.jpg", alt="thoubs 2")
+                            .card-body
+                                h5.card-title Loseil
+                                    img(src="imgs/japan-flag.svg", alt="japan flag")
+                                p.card-text Brand: Toyobo
+                                span.currency.fw-bold 200 USD
+                    .col-lg-3.col-6 
+                        .card.shadow
+                            img.card-img-top(src="imgs/thoubs3.jpg", alt="thoubs 3")
+                            .card-body
+                                h5.card-title Al Beda3
+                                    img(src="imgs/japan-flag.svg", alt="japan flag")
+                                p.card-text Brand: Toyobo
+                                span.currency.fw-bold 200 USD
+                    .col-lg-3.col-6
+                        .card.shadow
+                            img.card-img-top(src="imgs/thoubs4.jpg", alt="thoubs 4")
+                            .card-body
+                                h5.card-title Al Majles
+                                    img(src="imgs/japan-flag.svg", alt="japan flag")
+                                p.card-text Brand: Shibiko
+                                span.currency.fw-bold 200 USD
+        section.reviews
+            .container-lg 
+                .heading.text-center
+                    i.fas.fa-quote-left
+                    p Reviews from our Loyal Cusomters
+                    h3 Product Reviews
+                .row 
+                    .offset-lg-3.col-lg-6.col-12 
+                        .body
+                            .card
+                                .card-body
+                                    h5.card-title Naseej Thoub
+                                    .line-colored
+                            .rate 
+                                .row 
+                                    .offset-lg-3.col-lg-3.col-6.text-center
+                                        h4.title 4.5 out of 5 stars
+                                        .stars
+                                            i.fas.fa-star-half-alt
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                            i.fas.fa-star
+                                        span.mt-3 120 Reviews
+                                    .col-lg-3.col-6
+                                        .progress-bars 
+                                            .row.align-items-center
+                                                .col-3.p-0.d-flex
+                                                    span 5 Stars 
+                                                .col.p-0
+                                                    .progress
+                                                        .progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                                .col-2.d-flex
+                                                    span 79%
+                                            .row.align-items-center
+                                                .col-3.p-0.d-flex
+                                                    span 5 Stars 
+                                                .col.p-0
+                                                    .progress
+                                                        .progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                                .col-2.d-flex
+                                                    span 79%
+                                            .row.align-items-center
+                                                .col-3.p-0.d-flex
+                                                    span 5 Stars 
+                                                .col.p-0
+                                                    .progress
+                                                        .progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                                .col-2.d-flex
+                                                    span 79%
+                                            .row.align-items-center
+                                                .col-3.p-0.d-flex
+                                                    span 5 Stars 
+                                                .col.p-0
+                                                    .progress
+                                                        .progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                                .col-2.d-flex
+                                                    span 79%
+                                            .row.align-items-center
+                                                .col-3.p-0.d-flex
+                                                    span 5 Stars 
+                                                .col.p-0
+                                                    .progress
+                                                        .progress-bar(role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100")
+                                                .col-2.d-flex
+                                                    span 79%
+                                            
+                                    .offset-lg-3.col-lg-6.col-12.text-center
+                                        button.btn.submit Submit Review 
+                            .comment 
+                                .d-flex
+                                    .avatar 
+                                        img(src="imgs/man.png", alt="")
+                                    .data 
+                                        .name 
+                                            h2 Mohamed Mamdouh
+                                            .stars
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                        .time 5 days ago
+                                .info Excellent product quality.
+                            .comment 
+                                .d-flex
+                                    .avatar 
+                                        img(src="imgs/man.png", alt="")
+                                    .data 
+                                        .name 
+                                            h2 Mohamed Mamdouh
+                                            .stars
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star
+                                                i.fas.fa-star-half-alt
+                                        .time 5 days ago
+                                .info Excellent product quality.
+                            .comment 
+                                .d-flex
+                                    .avatar 
+                                        img(src="imgs/man.png", alt="")
+                                    .data 
+                                        .name 
+                                            h2 Mohamed Mamdouh
+                                            
+                                        .time 5 days ago
+                                .info Excellent product quality.
+                            .comment 
+                                .d-flex
+                                    .avatar 
+                                        img(src="imgs/man.png", alt="")
+                                    .data 
+                                        .name 
+                                            h2 Mohamed Mamdouh
+                                            
+                                        .time 5 days ago
+                                .info Excellent product quality.
+                            .show
+                                button.btn.show-more.ps-0 Show More
+                                    i.fas.fa-chevron-down
+
+        section.accessories
+            .top-image 
+                img(src="imgs/patterns.png", alt="")
+            .container-sm 
+                .details 
+                    p Carefully selected for your style
+                    h2 Naseej's Accessories
+                    .row 
+                        .col-lg-4.col-12.mb-3.mb-lg-0
+                            .card
+                                img.card-img-top(src="imgs/thoubs4.jpg", alt="thoubs 1")
+                                .card-body
+                                    h5.card-title Rosary - Yellow
+                                    span.currency.fw-bold 60 USD
+                                    .line-colored
+                        .col-lg-4.col-12.mb-3.mb-lg-0
+                            .card
+                                img.card-img-top(src="imgs/thoubs3.jpg", alt="thoubs 1")
+                                .card-body
+                                    h5.card-title Rosary - Yellow
+                                    span.currency.fw-bold 60 USD
+                                    .line-colored
+                        .col-lg-4.col-12.mb-3.mb-lg-0
+                            .card
+                                img.card-img-top(src="imgs/thoubs2.jpg", alt="thoubs 1")
+                                .card-body
+                                    h5.card-title Rosary - Yellow
+                                    span.currency.fw-bold 60 USD
+                                    .line-colored
+                
+        include pug/layout/footer
+        
+        
+
+        //- script file
+        script(src="js/jquery-3.3.1.min.js")
+        script(src="js/owl.carousel.min.js")
+        script(src="js/main.js")

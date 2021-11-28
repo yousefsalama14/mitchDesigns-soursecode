@@ -1,0 +1,43 @@
+@import 
+        url('../fonts/helvetica/helvetica.woff'),
+        url('../fonts/helvetica/helvetica-bold.woff'),
+        url('../fonts/helvetica/HelveticaNeue-Bold.woff'),
+        url('../fonts/ubuntu/Ubuntu-Bold.ttf'),
+        url('../fonts/ubuntu/Ubuntu-Medium.ttf'),
+        url('../fonts/ubuntu/Ubuntu-Regular.ttf'),
+        url('../fonts/tajawal/Tajawal-Regular.ttf'),
+        url('../fonts/Rubik/Rubik-Bold.ttf');
+
+@font-face {
+        font-family: "helvetica"; 
+        src:  url('../fonts/helvetica/helvetica.woff'),
+              url('../fonts/helvetica/helvetica-bold.woff'),
+              url('../fonts/helvetica/HelveticaNeue-Bold.woff');
+      } 
+@font-face {
+        font-family: "Ubuntu-bold"; 
+        src:  url('../fonts/ubuntu/Ubuntu-Bold.ttf');
+      } 
+@font-face {
+        font-family: "Ubuntu-Medium"; 
+        src:  url('../fonts/ubuntu/Ubuntu-Medium.ttf');
+      } 
+@font-face {
+        font-family: "Ubuntu-Regular"; 
+        src:  url('../fonts/ubuntu/Ubuntu-Regular.ttf');
+      } 
+@font-face {
+        font-family: "Tajawal-Regular"; 
+        src:  url('../fonts/tajawal/Tajawal-Regular.ttf');
+      } 
+@font-face {
+        font-family: "Rubik"; 
+        src:  url('../fonts/Rubik/Rubik-Bold.ttf');
+      } 
+
+$mainFont: "helvetica";
+$Ubuntu-bold: "Ubuntu-bold";
+$Ubuntu-Medium: "Ubuntu-Medium";
+$Ubuntu-Regular: "Ubuntu-Regular";
+$arabicFont: 'Rubik';
+$secondArabicFont: "Tajawal-Regular";
